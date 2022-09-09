@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2485px" height="5507px" viewBox="0 0 2485 5507" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <g id="FineAutomations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2">
+            <g id="Group" transform="translate(274.667234, 332.000000)" stroke="#FFFFFF">
+                <circle id="Oval" stroke-width="27" cx="300.832766" cy="94.5" r="81"></circle>
+                <circle id="Oval" stroke-width="27" cx="301.832766" cy="1847.5" r="81"></circle>
+                <circle id="Oval" stroke-width="27" cx="356.832766" cy="2907.5" r="81"></circle>
+                <circle id="Oval" stroke-width="27" cx="303.832766" cy="4763.5" r="81"></circle>
+                <polyline id="Path-29" stroke-width="17" points="232.661635 158.275496 0 389 0 1553.32579 246 1799.32579"></polyline>
+                <polyline id="Path-30" stroke-width="17" points="0 1553.32579 0 3270.52429 295.832766 2974.69153"></polyline>
+                <polyline id="Path-31" stroke-width="17" points="0 3270.52429 0 4453.42317 246 4699.42317"></polyline>
+            </g>
+            <rect id="Rectangle" x="0" y="0" width="2485" height="5507"></rect>
+        </g>
+    </g>
+</svg>
