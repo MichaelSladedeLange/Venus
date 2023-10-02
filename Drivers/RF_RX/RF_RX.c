@@ -378,12 +378,11 @@ void Check_RF_Flags(void)
 
 					Arm_Status = 2;
 
-					HAL_GPIO_WritePin(OUT_ONOFF_GPIO_Port, OUT_ONOFF_Pin, GPIO_PIN_SET);
-					Siren_Annunciate = 1;
+					Buzzer_Annunciate = 3;
 					Siren_Annunciate_Delay = 0;
 
 				}
-			} else if((button == (PANIC_BUTTON|ARM_BUTTON))) {
+			} else if((button == (PANIC_BUTTON))) {
 				memset(Message, 0, 10);
 				Message[0] = EE_PANIC;
 				Message[1] = EE_BY_MESSAGE;
@@ -396,7 +395,7 @@ void Check_RF_Flags(void)
 				Siren_Time = SIREN_SECONDS;
 
 
-			} else if(button == PANIC_BUTTON) {
+			} else if(button == PANIC_BUTTON|ARM_BUTTON) {
 				memset(Message, 0, 10);
 				Message[0] = EE_SILENT_PANIC;
 				Message[1] = EE_BY_MESSAGE;
@@ -407,6 +406,8 @@ void Check_RF_Flags(void)
 				Add_Message_to_Que(Message, 0, 0, 0, TRUE);
 				Panic_Out_Time = OUTPUT_ON_TIME + 1;
 				Buzzer_Time = Silent_Panic_Buzzer_Time;
+
+
 			} else if(button&DEVICEBIT) {
 				if(button == (ZONE1TRIG | DEVICEBIT)) {
 					if((AwayModeZones[0] == '1')&&(Arm_Status == 1)&&(ZoneTriggers[0] < 5)) {
@@ -434,8 +435,7 @@ void Check_RF_Flags(void)
 							Add_Message_to_Que(Message, 0, 0, 0, TRUE);
 						}
 						//  Chime Trigger
-						Siren_Time = SIREN_SECONDS;
-						Alarm_Out_Time = OUTPUT_ON_TIME + 1;
+						Buzzer_Annunciate = 6;
 					}
 				} else if(button == (ZONE2TRIG | DEVICEBIT)) {
 					if((AwayModeZones[1] == '1')&&(Arm_Status == 1)&&(ZoneTriggers[1] < 5)) {
@@ -464,8 +464,7 @@ void Check_RF_Flags(void)
 							Add_Message_to_Que(Message, 0, 0, 0, TRUE);
 						}
 						//  Chime Trigger
-						Siren_Time = SIREN_SECONDS;
-						Alarm_Out_Time = OUTPUT_ON_TIME + 1;
+						Buzzer_Annunciate = 6;
 					}
 				} else if(button == (ZONE3TRIG | DEVICEBIT)) {
 					if((AwayModeZones[2] == '1')&&(Arm_Status == 1)&&(ZoneTriggers[2] < 5)) {
@@ -489,8 +488,7 @@ void Check_RF_Flags(void)
 							Add_Message_to_Que(Message, 0, 0, 0, TRUE);
 						}
 						//  Chime Trigger
-						Siren_Time = SIREN_SECONDS;
-						Alarm_Out_Time = OUTPUT_ON_TIME + 1;
+						Buzzer_Annunciate = 6;
 					}
 				} else if(button == (ZONE4TRIG | DEVICEBIT)) {
 					if((AwayModeZones[3] == '1')&&(Arm_Status == 1)&&(ZoneTriggers[3] < 5)) {
@@ -544,8 +542,7 @@ void Check_RF_Flags(void)
 							Add_Message_to_Que(Message, 0, 0, 0, TRUE);
 						}
 						//  Chime Trigger
-						Siren_Time = SIREN_SECONDS;
-						Alarm_Out_Time = OUTPUT_ON_TIME + 1;
+						Buzzer_Annunciate = 6;
 					}
 				} else if(button == (ZONE6TRIG | DEVICEBIT)) {
 					if((AwayModeZones[5] == '1')&&(Arm_Status == 1)&&(ZoneTriggers[5] < 5)) {
@@ -572,8 +569,7 @@ void Check_RF_Flags(void)
 							Add_Message_to_Que(Message, 0, 0, 0, TRUE);
 						}
 						//  Chime Trigger
-						Siren_Time = SIREN_SECONDS;
-						Alarm_Out_Time = OUTPUT_ON_TIME + 1;
+						Buzzer_Annunciate = 6;
 					}
 				}
 
