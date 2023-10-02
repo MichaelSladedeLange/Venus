@@ -1,0 +1,11 @@
+../Core/Src/stm32f0xx_it.c:78:6:NMI_Handler	0	static
+../Core/Src/stm32f0xx_it.c:93:6:HardFault_Handler	0	static
+../Core/Src/stm32f0xx_it.c:115:6:RTC_IRQHandler	8	static
+../Core/Src/stm32f0xx_it.c:129:6:RCC_IRQHandler	0	static
+../Core/Src/stm32f0xx_it.c:142:6:EXTI4_15_IRQHandler	8	static
+../Core/Src/stm32f0xx_it.c:174:6:ADC1_IRQHandler	8	static
+../Core/Src/stm32f0xx_it.c:188:6:TIM6_IRQHandler	8	static
+../Core/Src/stm32f0xx_it.c:202:6:TIM7_IRQHandler	8	static
+../Core/Src/stm32f0xx_it.c:216:6:TIM17_IRQHandler	8	static
+../Core/Src/stm32f0xx_it.c:230:6:I2C1_IRQHandler	8	static
+../Core/Src/stm32f0xx_it.c:248:6:USART2_IRQHandler	8	static

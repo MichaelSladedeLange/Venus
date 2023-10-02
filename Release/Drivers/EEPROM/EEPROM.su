@@ -1,0 +1,5 @@
+../Drivers/EEPROM/EEPROM.c:135:6:Save_Settings	32	static
+../Drivers/EEPROM/EEPROM.c:155:8:Read_Settings	32	static
+../Drivers/EEPROM/EEPROM.c:64:6:Update_Mem_Values	16	static
+../Drivers/EEPROM/EEPROM.c:179:6:IIC_EEPROM_Read_Page	32	static
+../Drivers/EEPROM/EEPROM.c:205:15:IIC_EEPROM_Write_Page	40	static
