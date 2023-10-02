@@ -1,6 +1,6 @@
-EEPROM.c:64:6:Update_Mem_Values	14
-EEPROM.c:135:6:Save_Settings	5
-EEPROM.c:155:8:Read_Settings	3
-EEPROM.c:179:6:IIC_EEPROM_Read_Page	5
-EEPROM.c:205:15:IIC_EEPROM_Write_Page	16
-EEPROM.c:285:21:Buffercmp	3
+EEPROM.c:65:6:Update_Mem_Values	15
+EEPROM.c:142:6:Save_Settings	5
+EEPROM.c:162:8:Read_Settings	3
+EEPROM.c:186:6:IIC_EEPROM_Read_Page	5
+EEPROM.c:212:15:IIC_EEPROM_Write_Page	16
+EEPROM.c:292:21:Buffercmp	3

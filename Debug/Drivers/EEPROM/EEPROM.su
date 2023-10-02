@@ -1,6 +1,6 @@
-../Drivers/EEPROM/EEPROM.c:64:6:Update_Mem_Values	16	static
-../Drivers/EEPROM/EEPROM.c:135:6:Save_Settings	32	static
-../Drivers/EEPROM/EEPROM.c:155:8:Read_Settings	24	static
-../Drivers/EEPROM/EEPROM.c:179:6:IIC_EEPROM_Read_Page	32	static
-../Drivers/EEPROM/EEPROM.c:205:15:IIC_EEPROM_Write_Page	40	static
-../Drivers/EEPROM/EEPROM.c:285:21:Buffercmp	24	static
+../Drivers/EEPROM/EEPROM.c:65:6:Update_Mem_Values	16	static
+../Drivers/EEPROM/EEPROM.c:142:6:Save_Settings	32	static
+../Drivers/EEPROM/EEPROM.c:162:8:Read_Settings	24	static
+../Drivers/EEPROM/EEPROM.c:186:6:IIC_EEPROM_Read_Page	32	static
+../Drivers/EEPROM/EEPROM.c:212:15:IIC_EEPROM_Write_Page	40	static
+../Drivers/EEPROM/EEPROM.c:292:21:Buffercmp	24	static

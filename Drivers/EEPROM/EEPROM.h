@@ -63,6 +63,10 @@ typedef enum EEPROM_List{
 	EE_TCP_PORT,						// 050
 	EE_AT_MESSAGE,						// 051
 
+	//NEW FEATURES OF THE VENUS ALARM
+
+	EE_SOUND_CHIME_ZONES = 60,			//060
+
 	EE_CELL1_API = 85,					// 085
 	EE_CELL2_API,						// 086
 	EE_CELL3_API,						// 087

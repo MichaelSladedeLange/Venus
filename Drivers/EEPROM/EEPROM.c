@@ -41,6 +41,7 @@ float Bat_Ok_V = 0;
 unsigned char AwayModeZones[ZONECOUNT];
 unsigned char ChimeModeZones[ZONECOUNT];
 unsigned char AnyModeChimeZones[ZONECOUNT];
+unsigned char SoundModeChimeZones[ZONECOUNT];
 
 unsigned char SPIPageBUF[128];
 unsigned char EEPROM_Field[128];
@@ -80,6 +81,12 @@ void Update_Mem_Values(void)
     pointer = Read_Settings(EE_CHIME_ANYMODE_ZONES);
     for(tempint = 0; tempint < ZONECOUNT; tempint++) {
        	AnyModeChimeZones[tempint] = pointer[0];
+       	pointer++;
+    }
+
+    pointer = Read_Settings(EE_SOUND_CHIME_ZONES);
+    for(tempint = 0; tempint < ZONECOUNT; tempint++) {
+       	SoundModeChimeZones[tempint] = pointer[0];
        	pointer++;
     }
 
